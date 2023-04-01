@@ -26,6 +26,7 @@ public class RepositoryPostgres {
         return namedParameterJdbcTemplate.queryForList(query, paramMap, String.class);
     }
 
+
     public List<String> getProducts() {
         query = "SELECT product_name from ddl.ORDERS;";
         Map<String, String> paramMap = new HashMap<String, String>();
